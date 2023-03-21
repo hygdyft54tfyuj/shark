@@ -1,8 +1,6 @@
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.sayText("imortallity")
     imt = 1
-    info.changeScoreBy(1e+57)
-    info.changeLifeBy(1e+57)
 })
 sprites.onDestroyed(SpriteKind.Food, function (sprite) {
     fish = sprites.create(img`
