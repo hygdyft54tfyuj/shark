@@ -528,8 +528,7 @@ forever(function () {
             ....................
             ....................
             `, SpriteKind.Enemy)
-    }
-    if (imt == 1) {
+    } else {
         sprites.destroyAllSpritesOfKind(SpriteKind.Enemy)
         fish = sprites.create(img`
             . . . . . . . . . . . . . . . . 
