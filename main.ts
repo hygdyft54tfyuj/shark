@@ -1,7 +1,3 @@
-controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite.sayText("imortallity")
-    imt = 1
-})
 sprites.onDestroyed(SpriteKind.Food, function (sprite) {
     fish = sprites.create(img`
         . . . . . . . . . . . . . . . . 
@@ -43,6 +39,10 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . . . . . . . . . . . . 
         `, mySprite, -6, 6)
 })
+controller.combos.attachCombo("uuddlrlrba", function () {
+    imt = 1
+    g = 1
+})
 sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Player, function (sprite, otherSprite) {
     info.changeLifeBy(-1)
 })
@@ -83,6 +83,7 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, oth
     sprites.destroyAllSpritesOfKind(SpriteKind.Enemy)
 })
 let projectile: Sprite = null
+let g = 0
 let imt = 0
 let mySprite2: Sprite = null
 let fish: Sprite = null
@@ -271,7 +272,13 @@ mySprite2 = sprites.create(img`
     `, SpriteKind.Enemy)
 mySprite2.setPosition(randint(1, 160), randint(1, 120))
 imt = 0
+g = 0
 controller.moveSprite(mySprite)
+forever(function () {
+    if (g == 1) {
+        mySprite.setImage(assets.image`gold`)
+    }
+})
 forever(function () {
     characterAnimations.runFrames(
     mySprite,

@@ -4,6 +4,11 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage"
     },
+    "image2": {
+        "data": "hwQgABAAAAAAAAD/DwAAAAAAAL/7AAAAAADwy7sPAAAAAPC7G/wAAAAAv7sRzA8AAAC/uxEc8wAAAL+7ETPzAAAAv7sRExwMAAC/+xjMEQwAAL+LGBwRDADwvLuBEREMAMy8iLsR/AzAzbyLuLu7D9y9vIi7u9v73Lu8i7i7u/2/y7y7u8u/+7//v7u7zP37/wDPu8vM3f8AAPjMzMzdDACA+MzMzM0IAIj4zMy8zYiAiIjPzNyMiICIiM/MvIyIiIiI+MzMiIgAAIj4zI+IiAAAgPzLj4iIAADA3buPiAAAANy9y/sAgAAAvLvMuwEIAMC7+/i8+4gAwMsPAP/7AADADACIAP8A",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "gold"
+    },
     "anim1": {
         "namespace": "myAnimations",
         "id": "anim1",
